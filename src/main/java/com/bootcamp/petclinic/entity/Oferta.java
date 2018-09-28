@@ -26,7 +26,7 @@ public class Oferta {
 	private String detalle;
 	
 	@Column(name = "descuento")
-	private Double descuento;
+	private int descuento;
 	
 	@Column(name = "fechaCaducidad")
 	@Temporal(TemporalType.DATE)
@@ -37,7 +37,7 @@ public class Oferta {
 	}
 	
 
-	public Oferta(String titulo, String detalle, Double descuento, Date fechaCaducidad) {
+	public Oferta(String titulo, String detalle, int descuento, Date fechaCaducidad) {
 		super();
 		this.titulo = titulo;
 		this.detalle = detalle;
@@ -62,11 +62,11 @@ public class Oferta {
 		this.detalle = detalle;
 	}
 
-	public Double getDescuento() {
+	public int getDescuento() {
 		return descuento;
 	}
 
-	public void setDescuento(Double descuento) {
+	public void setDescuento(int descuento) {
 		this.descuento = descuento;
 	}
 
