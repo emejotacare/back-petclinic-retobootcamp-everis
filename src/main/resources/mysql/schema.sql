@@ -63,3 +63,11 @@ CREATE TABLE IF NOT EXISTS visits (
   description VARCHAR(255),
   FOREIGN KEY (pet_id) REFERENCES pets(id)
 ) engine=InnoDB;
+
+CREATE TABLE IF NOT EXISTS ofertas (
+id INT(4) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+titulo VARCHAR(255),
+detalle VARCHAR(255),
+descuento INT(4) UNSIGNED NOT NULL,
+fechaCaducidad DATE
+) engine=InnoDB;
