@@ -11,7 +11,7 @@ public interface OfertaService {
 	
 	List<Oferta> findAll();
 	
-	Oferta saveOferta(Oferta oferta);
+	Oferta saveOferta(Oferta ofertaCurrent);
 	
 	void deleteOferta(int id);
 
